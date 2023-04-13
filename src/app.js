@@ -1,26 +1,27 @@
-/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
 import "./assets/img/4geeks.ico";
 
 window.onload = function generateRandomCard() {
-  let generateSuit = function generateSuit() {
+  function generateSuit() {
     const suits = [
-      "bi bi-suit-heart-fill",
-      "bi bi-suit-diamond-fill",
-      "bi bi-suit-club-fill",
-      "bi bi-suit-spade-fill"
+      "bi-suit-heart-fill",
+      "bi-suit-diamond-fill",
+      "bi-suit-club-fill",
+      "bi-suit-spade-fill"
     ];
 
     const randomSuit = suits[Math.floor(Math.random() * suits.length)];
 
-    const suitElement = document.getElementsByClassName("icon");
+    const topSuitElement = document.getElementById("top-icon");
+    topSuitElement.classList.add(randomSuit);
 
-    suitElement.classList.add(iconClasses[randomSuit]);
-  };
+    const bottomSuitElement = document.getElementById("bottom-icon");
+    bottomSuitElement.classList.add(randomSuit);
+  }
 
-  let generateCardNumber = function generateCardNumber() {
+  function generateCardNumber() {
     const cardNumbers = [
       "A",
       "2",
@@ -40,6 +41,9 @@ window.onload = function generateRandomCard() {
     const randomCardNumber =
       cardNumbers[Math.floor(Math.random() * cardNumbers.length)];
 
-    document.getElementsByClassName("number").textContent = randomCardNumber;
-  };
+    document.getElementById("number").textContent = randomCardNumber;
+  }
+
+  generateSuit();
+  generateCardNumber();
 };
