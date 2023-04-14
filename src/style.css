@@ -2,13 +2,13 @@
 
 body {
   background-color: green;
-  font-family: "Radley", sans;
+  font-family: "Lora", sans-serif;
 }
 
 .number {
   text-align: center;
-  padding: 145px 0;
-  font-size: 5em;
+  padding: 90px 0;
+  font-size: 12em;
 }
 
 .card {
@@ -24,13 +24,19 @@ body {
 }
 
 #top-icon {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: -10px;
 }
 
 #bottom-icon {
   transform: rotate(180deg);
   transform: scaleX(1, -1);
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #top-icon.bi-suit-heart-fill,
