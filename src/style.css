@@ -4,7 +4,7 @@ body {
   background-color: green;
 }
 
-h1 {
+.number {
   text-align: center;
   padding: 145px 0;
 }
@@ -21,12 +21,28 @@ h1 {
   box-shadow: 5px 5px 5px rgb(0, 69, 0);
 }
 
-.top-icon {
+#top-icon {
   padding: 10px;
 }
 
-.bottom-icon {
+#bottom-icon {
   transform: rotate(180deg);
   transform: scaleX(1, -1);
   padding: 10px;
+}
+
+#top-icon.bi-suit-heart-fill {
+  color: red;
+}
+
+#bottom-icon.bi-suit-heart-fill {
+  color: red;
+}
+
+#top-icon.bi-suit-diamond-fill {
+  color: red;
+}
+
+#bottom-icon.bi-suit-diamond-fill {
+  color: red;
 }
