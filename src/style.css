@@ -32,19 +32,17 @@ body {
   padding: 10px;
 }
 
-#top-icon.bi-suit-heart-fill {
+#top-icon.bi-suit-heart-fill,
+#bottom-icon.bi-suit-heart-fill,
+#top-icon.bi-suit-diamond-fill,
+#bottom-icon.bi-suit-diamond-fill {
   color: red;
   font-size: 5em;
 }
 
-#bottom-icon.bi-suit-heart-fill {
-  color: red;
-}
-
-#top-icon.bi-suit-diamond-fill {
-  color: red;
-}
-
-#bottom-icon.bi-suit-diamond-fill {
-  color: red;
+#top-icon.bi-suit-club-fill,
+#bottom-icon.bi-suit-club-fill,
+#top-icon.bi-suit-spade-fill,
+#bottom-icon.bi-suit-spade-fill {
+  font-size: 5em;
 }
